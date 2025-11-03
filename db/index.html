@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portal de Notícias</h1>
+            
+            <!-- Bloco de Login/Logout -->
+            <div id="auth-container">
+                <div id="login-form">
+                    <h2>Login</h2>
+                    <form id="form-login">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                    <p id="login-message" class="message"></p>
+                </div>
+                
+                <div id="user-info" style="display: none;">
+                    <p>Logado como <span id="user-name"></span></p>
+                    <button id="btn-logout" class="btn btn-secondary">Sair</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Mensagem de acesso restrito -->
+            <div id="restricted-access" class="message error">
+                <p>Acesso restrito: faça login para continuar</p>
+            </div>
+
+            <!-- Área de busca -->
+            <div class="search-container">
+                <h2>Buscar Notícias</h2>
+                <div class="form-group">
+                    <input type="text" id="search-input" placeholder="Filtrar por título..." disabled>
+                </div>
+            </div>
+
+            <!-- Lista de Notícias -->
+            <div id="patients-container" style="display: none;">
+                <h2>Lista de Notícias</h2>
+                <div id="patients-list"></div>
+                <div class="pagination">
+                    <button id="prev-page" class="btn btn-secondary">Anterior</button>
+                    <span id="page-info">Página 1</span>
+                    <button id="next-page" class="btn btn-secondary">Próxima</button>
+                </div>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div id="patient-form-container" style="display: none;">
+                <h2>Cadastrar Nova Notícia</h2>
+                <form id="form-patient">
+                    <div class="form-group">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="autor">Autor:</label>
+                        <input type="text" id="autor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" id="categoria" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="conteudo">Conteúdo:</label>
+                        <textarea id="conteudo" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+                <p id="form-message" class="message"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Portal de Notícias</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

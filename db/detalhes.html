@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Notícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Detalhes da Notícia</h1>
+            <div id="user-info">
+                <p>Logado como <span id="user-name"></span></p>
+                <button id="btn-logout" class="btn btn-secondary">Sair</button>
+            </div>
+            <a href="index.html" class="btn btn-secondary">Voltar</a>
+        </header>
+
+        <main>
+            <div id="patient-details">
+                <h2>Editar Notícia</h2>
+                <form id="form-edit-patient">
+                    <input type="hidden" id="patient-id">
+                    <div class="form-group">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="autor">Autor:</label>
+                        <input type="text" id="autor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" id="categoria" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="conteudo">Conteúdo:</label>
+                        <textarea id="conteudo" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                </form>
+                <p id="form-message" class="message"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Portal de Notícias</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,18 +1,64 @@
 {
   "usuarios": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
+      "id": "1",
       "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "email": "admin@exemplo.com",
+      "senha": "admin123"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
+      "id": "2",
       "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "email": "user@exemplo.com",
+      "senha": "user123"
+    },
+    {
+      "id": "3",
+      "nome": "Maria Silva",
+      "email": "maria@exemplo.com",
+      "senha": "maria123"
+    }
+  ],
+  "noticias": [
+    {
+      "id": "1",
+      "titulo": "Stalking: saiba identificar e o que fazer",
+      "autor": "João Silva",
+      "data": "2024-06-15",
+      "categoria": "Sociedade",
+      "conteudo": "Médica psiquiatra do Distrito Federal viralizou nas redes na última semana, ao contar seu relato sobre um ex-paciente que a persegue há mais de quatro anos. Entenda o que é, quais são penas e veja como denunciar."
+    },
+    {
+      "id": "2",
+      "titulo": "PIX fora do ar: usuários relatam problemas com o sistema de pagamentos",
+      "autor": "Ana Souza",
+      "data": "2024-06-26",
+      "categoria": "Economia",
+      "conteudo": "Usuários de diferentes bancos relataram instabilidade no sistema de pagamentos instantâneos do Banco Central (BC) na tarde desta quarta-feira (26). Segundo relatos nas redes sociais, o PIX estaria fora do ar em instituições como Nubank, Banco do Brasil, Bradesco, Itaú e C6 Bank."
+    },
+    {
+      "id": "3",
+      "titulo": "Nova tecnologia promete revolucionar o mercado de smartphones",
+      "autor": "Carlos Ferreira",
+      "data": "2024-06-20",
+      "categoria": "Tecnologia",
+      "conteudo": "Uma nova tecnologia de bateria desenvolvida por pesquisadores brasileiros promete aumentar a duração da carga em até 3 vezes. A inovação deve chegar ao mercado nos próximos meses."
+    },
+    {
+      "id": "4",
+      "titulo": "Festival de Cinema anuncia programação completa",
+      "autor": "Mariana Costa",
+      "data": "2024-06-18",
+      "categoria": "Cultura",
+      "conteudo": "O Festival Internacional de Cinema anunciou hoje a programação completa do evento que acontecerá no próximo mês. Mais de 50 filmes de 20 países serão exibidos."
+    },
+    {
+      "id": "5",
+      "titulo": "Descoberta arqueológica revela civilização antiga",
+      "autor": "Roberto Almeida",
+      "data": "2024-06-10",
+      "categoria": "Ciência",
+      "conteudo": "Arqueólogos encontraram vestígios de uma civilização desconhecida que habitou o nordeste brasileiro há mais de 5.000 anos. Os artefatos revelam técnicas avançadas para a época."
     }
   ]
 }
